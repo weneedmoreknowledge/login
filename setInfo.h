@@ -10,9 +10,34 @@
 #define setInfo_h
 #include <iostream>
 #include <fstream>
-#include "setInfo.cpp"
 
 using namespace std;
+
+struct Course {
+    string CCO;
+    string Name;
+    string Credit;
+    int Credit_n;
+    string Lecture;
+    string Code;
+    string score;
+};
+struct Student {
+    string ID;
+    string Name;
+    string Birth;
+    string Adress;
+    string semester;
+    Course sCo[20];
+};
+
+struct Teacher {
+    string ID,Name,Birth,Phone,Adress,course;
+};
+
+struct User {
+    string ID,Pass,Position;
+};
 
 void set_Student(Student st[]);
 void set_Teacher(Teacher st[]);

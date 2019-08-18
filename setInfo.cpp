@@ -11,32 +11,6 @@
 #include "setinfo.h"
 using namespace std;
 
-struct Course {
-    string CCO;
-    string Name;
-    string Credit;
-    int Credit_n;
-    string Lecture;
-    string Code;
-    string score;
-};
-struct Student {
-    string ID;
-    string Name;
-    string Birth;
-    string Adress;
-    string semester;
-    Course sCo[20];
-};
-
-struct Teacher {
-    string ID,Name,Birth,Phone,Adress,course;
-};
-
-struct User {
-    string ID,Pass,Position;
-};
-
 void set_Student(Student st[]){
     ifstream file("student.csv");
     if(!file.is_open()){
