@@ -6,7 +6,7 @@
 //  Copyright © 2019 KANG MINWOO. All rights reserved.
 //
 
-#include "setinfo.h"
+#include "setInfo.h"
 
 void set_Student(Student st[]){
     ifstream file("student.csv");
