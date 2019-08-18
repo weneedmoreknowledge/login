@@ -6,9 +6,7 @@
 //  Copyright © 2019 KANG MINWOO. All rights reserved.
 //
 
-#include <iostream>
-#include <fstream>
-#include "setInfo.h"
+#include "student.h"
 
 void Regi(Course co[],Student st){
     for (int i=0; i<20; i++) {

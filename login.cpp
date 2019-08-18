@@ -6,13 +6,7 @@
 //  Copyright © 2019 KANG MINWOO. All rights reserved.
 //
 
-#include <iostream>
-#include <fstream>
-#include "setInfo.h"
-#include "admin.h"
-#include "professor.h"
-#include "student.h"
-using namespace std;
+#include "login.h"
 
 string tID;
 string tPass;

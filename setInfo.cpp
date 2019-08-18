@@ -6,10 +6,7 @@
 //  Copyright © 2019 KANG MINWOO. All rights reserved.
 //
 
-#include <iostream>
-#include <fstream>
 #include "setinfo.h"
-using namespace std;
 
 void set_Student(Student st[]){
     ifstream file("student.csv");

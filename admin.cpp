@@ -6,9 +6,7 @@
 //  Copyright © 2019 KANG MINWOO. All rights reserved.
 //
 
-#include <fstream>
-#include <iostream>
-#include "setInfo.h"
+#include "admin.h"
 using namespace std;
 
 void search(Student st[],Teacher te[],User us[]){

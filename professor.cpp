@@ -6,11 +6,8 @@
 //  Copyright © 2019 KANG MINWOO. All rights reserved.
 //
 
-#include <iostream>
-#include <fstream>
 #include "setInfo.h"
-
-using namespace std;
+#include "professor.h"
 
 void open_course(Course co[]){
     for (int i=0; i<50; i++) {
