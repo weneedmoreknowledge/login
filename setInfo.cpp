@@ -8,6 +8,7 @@
 
 #include <iostream>
 #include <fstream>
+#include "setinfo.h"
 using namespace std;
 
 struct Course {
