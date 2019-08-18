@@ -11,7 +11,7 @@
 string tID;
 string tPass;
 
-void change_pass(User us[],string ID){
+void change_pass(User *us,string ID){
     string cPass;
     cout<<"Enter the new Password : ";
     for (int i=0; i<1000; i++) {
@@ -23,7 +23,7 @@ void change_pass(User us[],string ID){
     }
 }
 
-void login(Student st[],Teacher te[],User us[],Course co[]){
+void login(Student *st,Teacher *te,User *us,Course *co){
     cout<<"ID : ";
     cin>>tID;
     int count=0;

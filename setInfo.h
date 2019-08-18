@@ -39,10 +39,10 @@ struct User {
     string ID,Pass,Position;
 };
 
-void set_Student(Student st[]);
-void set_Teacher(Teacher st[]);
-void set_User(User us[]);
-void set_Course(Course co[],Teacher te[]);
-void convert(Student st[]);
+void set_Student(Student *st);
+void set_Teacher(Teacher *st);
+void set_User(User *us);
+void set_Course(Course *co,Teacher *te);
+void convert(Student *st);
 
 #endif /* setInfo_h */

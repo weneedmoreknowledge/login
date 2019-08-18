@@ -8,7 +8,7 @@
 
 #include "setInfo.h"
 
-void set_Student(Student st[]){
+void set_Student(Student *st){
     ifstream file("student.csv");
     if(!file.is_open()){
         cout<<"Error! We cannot load the student database!";
@@ -64,7 +64,7 @@ void set_Student(Student st[]){
     }
 }
 
-void set_Teacher(Teacher st[]){
+void set_Teacher(Teacher *st){
     ifstream file("teacher.csv");
     if(!file.is_open()){
         cout<<"Error! We cannot load the teacher database!";
@@ -84,7 +84,7 @@ void set_Teacher(Teacher st[]){
     file.close();
 }
 
-void set_User(User us[]){
+void set_User(User *us){
     ifstream file("user.csv");
     if(!file.is_open()){
         cout<<"Error! We cannot load the user database!";
@@ -108,7 +108,7 @@ void set_User(User us[]){
     file.close();
 }
 
-void set_Course(Course co[],Teacher te[]){
+void set_Course(Course *co,Teacher *te){
     ifstream file("course.csv");
     if (!file.is_open()) {
         cout<<"Error! We cannot load the course database!";
@@ -156,7 +156,7 @@ void set_Course(Course co[],Teacher te[]){
     }
 }
 
-void convert(Student st[]){
+void convert(Student *st){
     for (int i=0; i<1000; i++) {
         for (int j=0; j<20; j++) {
                 if (st[i].sCo[j].Credit=="1")

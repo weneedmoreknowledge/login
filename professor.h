@@ -15,9 +15,9 @@
 
 using namespace std;
 
-void open_course(Course co[]);
-void summarize(Student st[],Teacher te);
-void modify(Student st[],Teacher te);
+void open_course(Course *co);
+void summarize(Student *st,Teacher te);
+void modify(Student *st,Teacher te);
 
 
 #endif /* professor_h */

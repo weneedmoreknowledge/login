@@ -12,10 +12,10 @@
 #include <iostream>
 #include "setInfo.h"
 using namespace std;
-void search(Student st[],Teacher te[],User us[]);
-void addStu(Student st[],User us[]);
-void addTea(Teacher st[],User us[]);
-void delStu(Student st[]);
-void delTea(Teacher st[]);
+void search(Student *st,Teacher *te,User *us);
+void addStu(Student *st,User *us);
+void addTea(Teacher *st,User *us);
+void delStu(Student *st);
+void delTea(Teacher *st);
 
 #endif /* admin_h */

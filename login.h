@@ -15,7 +15,7 @@
 #include "student.h"
 using namespace std;
 
-void change_pass(User us[],string ID);
-void login(Student st[],Teacher te[],User us[],Course co[]);
+void change_pass(User *us,string ID);
+void login(Student *st,Teacher *te,User *us,Course *co);
 
 #endif /* login_h */

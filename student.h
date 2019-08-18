@@ -12,8 +12,8 @@
 #include <fstream>
 #include "setInfo.h"
 
-void Regi(Course co[],Student st);
-void Del_co(Course co[],Student st);
+void Regi(Course *co,Student st);
+void Del_co(Course *co,Student st);
 void View(Student st);
 
 

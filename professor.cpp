@@ -9,7 +9,7 @@
 #include "setInfo.h"
 #include "professor.h"
 
-void open_course(Course co[]){
+void open_course(Course *co){
     for (int i=0; i<50; i++) {
         if (co[i].CCO=="") {
             break;
@@ -19,7 +19,7 @@ void open_course(Course co[]){
     }
 }
 
-void summarize(Student st[],Teacher te){
+void summarize(Student *st,Teacher te){
     for (int i=0; i<1000; i++) {
         for (int j=0; j<20; j++) {
             if (st[i].sCo[j].Name==te.course) {
@@ -33,7 +33,7 @@ void summarize(Student st[],Teacher te){
     }
 }
 
-void modify(Student st[],Teacher te){
+void modify(Student *st,Teacher te){
     string pID;
     string pName;
     int cho;

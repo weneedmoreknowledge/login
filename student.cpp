@@ -8,7 +8,7 @@
 
 #include "student.h"
 
-void Regi(Course co[],Student st){
+void Regi(Course *co,Student st){
     for (int i=0; i<20; i++) {
         if (co[i].CCO==""||co[i].Code==""||co[i].Name=="") {
             break;
@@ -34,7 +34,7 @@ void Regi(Course co[],Student st){
     }
 }
 
-void Del_co(Course co[],Student st){
+void Del_co(Course *co,Student st){
     for (int i=0; i<20; i++) {
         cout<<st.sCo[i].CCO<<","<<st.sCo[i].Code<<","<<st.sCo[i].Name<<","<<st.sCo[i].Credit<<","<<st.sCo[i].Lecture<<","<<st.sCo[i].score<<endl;
     }

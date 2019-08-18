@@ -9,7 +9,7 @@
 #include "admin.h"
 using namespace std;
 
-void search(Student st[],Teacher te[],User us[]){
+void search(Student *st,Teacher *te,User *us){
     int cho=0;
     string pID;
     string pName;
@@ -74,7 +74,7 @@ void search(Student st[],Teacher te[],User us[]){
     }
 }
 
-void addStu(Student st[],User us[]){
+void addStu(Student *st,User *us){
     string nID,nName,nBirth,nAdress,nBlank;
     for (int i=0; i<1000; i++) {
         if (st[i].ID==""||st[i].Name==""||st[i].Birth==""||st[i].Adress=="") {
@@ -104,7 +104,7 @@ void addStu(Student st[],User us[]){
     }
 }
 
-void addTea(Teacher st[],User us[]){
+void addTea(Teacher *st,User *us){
     string nID,nName,nBirth,nAdress,nPhone,nBlank;
     for (int i=0; i<1000; i++) {
         if (st[i].ID==""||st[i].Name==""||st[i].Birth==""||st[i].Adress=="") {
@@ -136,7 +136,7 @@ void addTea(Teacher st[],User us[]){
     }
 }
 
-void delStu(Student st[]){
+void delStu(Student *st){
     int cho;
     string pID;
     string pName;
@@ -188,7 +188,7 @@ void delStu(Student st[]){
     }
 }
 
-void delTea(Teacher st[]){
+void delTea(Teacher *st){
     int cho;
     string pID;
     string pName;
